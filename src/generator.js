@@ -30,11 +30,13 @@ const readJSONFile = async (filePath) => {
 const generate_home = async (metaData) => {
     // increase page count
     count_pages++;
-    if (metaData.author && metaData.github) {
+    if (metaData.author && metaData.github && metaData.repo) {
         const content = `
             Developed by ${metaData.author}
             <br/>
             Visit <a href="${metaData.github}">Github</a>
+            <hr/>
+            Visit <a href="${metaData.repo}">Project Repository</a>
             <hr/>
             <a href="quiz/index.html">Click to start the quiz</a>
             <hr/>
@@ -57,6 +59,9 @@ const generate_home = async (metaData) => {
         if (metaData.github === undefined) {
             console.error("Missing [github] filed in the file.")
         }
+        if (metaData.repo === undefined) {
+            console.error("Missing [repo] filed in the file.")
+        }
     }
 }
 
@@ -74,7 +79,7 @@ ${topHTML}
     content += `</ol>
     ${bottomHTML}
     <label>Progress</label>
-    <progress value="${index}" max="${maxIndex}"/>
+    <progress value="${index}" max="${maxIndex}"></progress>
 `
     return content;
 }
@@ -90,7 +95,8 @@ const create_last_content = async (path, score, maxScore) => {
 <body>
 <h1>Score</h1>
 <label>${score}/${maxScore}</label>
-    <progress value="${score}" max="${maxScore}"/>
+    <progress value="${score}" max="${maxScore}"></progress>
+    <a href="/">Start Again</a>
 </body>
 </html>
     `

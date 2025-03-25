@@ -1,6 +1,7 @@
 {
     "author": "Ashutosh Vishwakarma",
     "github": "https://github.com/ragnar-vallhala",
+    "repo": "https://github.com/ragnar-vallhala/quiz_generator",
     "questions": [
       {
         "question": "What is 7 x 8?",
