@@ -13,24 +13,26 @@ Welcome to **Quiz Generator 9000**, the only quiz maker you’ll ever need (unti
 
 Oh, you want **math** in a quiz project? Fine. Here's the magic formula:
 
-\[
-P = 1 + \sum\_{i=1}^{Q} O^i
-\]
+$$
+P = 1 + \sum_{k=1}^{Q} O^k
+$$
 
-Where:
+Where:  
+- \( P \) = Total number of pages  
+- \( Q \) = Number of questions  
+- \( O \) = Number of options per question  
 
-- **P** = Total number of pages 📄
-- **Q** = Number of questions ❓
-- **O** = Number of options per question (assuming each question has the same number of options)
-- **1** = The home page
+Example Calculation:  
 
-### Example:
+For **4 questions** with **4 options each**:  
 
-For **4 questions** with **4 options each**, the number of pages is:
+$$
+P = 1 + 4^1 + 4^2 + 4^3 + 4^4
+$$
 
-\[
-P = 1 + 4^1 + 4^2 + 4^3 + 4^4 = 1 + 4 + 16 + 64 + 256 = 341
-\]
+$$
+P = 1 + 4 + 16 + 64 + 256 = 341
+$$
 
 Wait, **341 pages** for 4 questions? Yep! This quiz isn’t playing around. 😆
 
