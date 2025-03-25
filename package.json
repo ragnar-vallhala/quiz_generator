@@ -1,0 +1,16 @@
+{
+  "name": "quiz_generator",
+  "version": "1.0.0",
+  "main": "src/generator.js",
+  "type": "module",
+  "exports": {
+    ".": "./src/generator.js"
+  },
+  "scripts": {
+    "start": "node main.js"
+  },
+  "keywords": [],
+  "author": "Ashutosh Vishwakarma",
+  "license": "ISC",
+  "description": "A simple quiz generator"
+}
