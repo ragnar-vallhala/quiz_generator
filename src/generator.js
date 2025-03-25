@@ -96,7 +96,7 @@ const create_last_content = async (path, score, maxScore) => {
 <h1>Score</h1>
 <label>${score}/${maxScore}</label>
     <progress value="${score}" max="${maxScore}"></progress>
-    <a href="/">Start Again</a>
+    <a href="/quiz_generator">Start Again</a>
 </body>
 </html>
     `
